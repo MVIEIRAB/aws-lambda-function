@@ -1,0 +1,25 @@
+name: Deploy function layer
+
+on:
+  push:
+    paths:
+      - "nodejs/**"
+    branches:
+      - master
+
+jobs:
+  lambda-layer:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./nodejs
+
+    steps:
+      - name: Checkout do código (puxando arquivos do repo)
+        uses: actions/checkout@v2
+
+      - name: Configurando versão do Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
