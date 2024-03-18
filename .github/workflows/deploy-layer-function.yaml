@@ -1,4 +1,4 @@
-name: Deploy function layer
+name: Deploy function code
 
 on:
   push:
@@ -30,6 +30,9 @@ jobs:
       - name: Gerando build do projeto
         run: npm run build
 
-
-
-${{ secrets.AWS_ACCESS_KEY_ID }}
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET }}
+          aws-region: us-east-1
+      - run: aws lambda update-function-code --function-name=my-function --zip-file=fileb://dist/index.zip
