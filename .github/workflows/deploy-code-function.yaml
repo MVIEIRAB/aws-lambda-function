@@ -2,8 +2,6 @@ name: Deploy function code
 
 on:
   push:
-    paths:
-      - "!nodejs/**"
     branches:
       - master
 
