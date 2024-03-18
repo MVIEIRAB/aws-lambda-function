@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "install": "asdadasdasdasd"
+  },
   "dependencies": {
     "is-odd": "^3.0.1"
   }
