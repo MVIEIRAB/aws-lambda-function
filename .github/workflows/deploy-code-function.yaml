@@ -7,7 +7,6 @@ on:
     branches:
       - master
 
-
 jobs:
   lambda-layer:
     runs-on: ubuntu-latest

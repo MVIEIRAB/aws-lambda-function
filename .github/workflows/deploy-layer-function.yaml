@@ -39,4 +39,3 @@ jobs:
       - run: aws lambda update-function-configuration \\
           --function-name my-function \\n \\
           --layers arn:aws:lambda:us-east-1:266560762267:layer:my-layer:1
-
