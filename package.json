@@ -7,7 +7,8 @@
     "prebuild": "rm -rf dist",
     "build": "tsup index.ts",
     "postbuild": "cd dist && zip -r index.zip index.js",
-    "layer-build": "zip -r nodejs.zip nodejs"
+    "layer-build": "zip -r nodejs.zip nodejs",
+    "asd": "asd"
   },
   "keywords": [],
   "author": "",

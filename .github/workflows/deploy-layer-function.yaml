@@ -1,4 +1,4 @@
-name: Deploy function layer
+name: Deploy function layery
 
 on:
   push:
