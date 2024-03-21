@@ -12,14 +12,14 @@ export const handler = async (
       return {
         statusCode: 200,
         body: JSON.stringify({
-          message: "The number is odd! asudiuasdjkasdjk",
+          message: "The number is odd!",
         }),
       };
 
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: "The number is not odd! ajkshdkjashdsa",
+        message: "The number is not odd!",
       }),
     };
   } catch (err) {
