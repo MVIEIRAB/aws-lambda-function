@@ -12,14 +12,14 @@ export const handler = async (
       return {
         statusCode: 200,
         body: JSON.stringify({
-          message: "O número é par!",
+          message: "O número NÃO é par!",
         }),
       };
 
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: "O número NÃO é par!",
+        message: "O número é par!",
       }),
     };
   } catch (err) {
