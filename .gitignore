@@ -2,3 +2,4 @@ node_modules
 nodejs/node_modules
 .vscode
 dist
+nodejs.zip
